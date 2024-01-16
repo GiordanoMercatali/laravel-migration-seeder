@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('arrival_station', 50);
             $table->datetime('start_time');
             $table->datetime('arrival_time');
-            $table->tinyint('coach')->unsigned();
+            $table->tinyInteger('coach')->unsigned();
             $table->boolean('is_on_time')->default(0);
             $table->boolean('has_been_canceled')->default(0);
         });
