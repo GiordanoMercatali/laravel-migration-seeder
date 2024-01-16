@@ -23,5 +23,6 @@ class TrainTableSeeder extends Seeder
         $train->coach = '9';
         $train->is_on_time = true;
         $train->has_been_canceled = false;
+        $train->save();
     }
 }
